@@ -137,13 +137,31 @@
     align-items: start;
   }
 
+  .headshot-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  .headshot {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    flex-shrink: 0;
+  }
+
+  .headshot-info { display: flex; flex-direction: column; }
+
   .home-tag {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 16px;
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -660,7 +678,14 @@
 <div id="tab-home" class="tab-content active">
   <div class="home-grid">
     <div>
-      <div class="home-tag">Molecular Biologist & Metabolomics Scientist</div>
+      <div class="headshot-wrap">
+        <img src="headshot.jpg" alt="Sri Ramya Donepudi" class="headshot">
+        <div class="headshot-info">
+          <div class="home-tag">Molecular Biologist & Metabolomics Scientist</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--charcoal);">Sri Ramya Donepudi</div>
+          <div style="font-size: 13px; color: var(--light);">PhD Candidate · University of Pittsburgh</div>
+        </div>
+      </div>
       <h1 class="home-heading">Uncovering <em>Lipid Mediator</em> Mechanisms in Disease</h1>
       <p class="home-bio">
         PhD candidate in Integrated Systems Biology at the University of Pittsburgh, investigating hepatic lipid mediator dysregulation in allergic asthma. My research integrates metabolomics, RNA-seq, and in vivo disease modeling to uncover mechanisms at the liver-lung interface, with a focus on diet-dependent CYP450 remodeling and sex-specific Epoxyeicosatrienoic acids (EETs) signaling.
